@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/img_inicio.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Menú de navegación */
+.header__menu {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2px 20px;
+    background-color: #0002;
+}
+
+.menu__logo img {
+    height: 100px;
+}
+
+.menu__list {
+    list-style: none;
+    display: flex;
+}
+
+.menu__list a {
+    text-decoration: none;
+    color: #fff;
+    margin: 1px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.menu__list a:hover {
+    color: #ffcc00;
+}
+
+.menu__hamburger {
+    display: none;
+    font-size: 24px;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.header__title{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    font-size: 1.7em;
+}
+
+.menu__icon>img{
+    width: 25px;
+}
+
+
+/* Main */
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section{
+    padding: 30px;
+    max-width: 700px;
+    min-width: 200px;
+}
+
+h2{
+    text-align: center;
+    font-size: 2.5em;
+    padding: 10px;
+}
+
+p{
+    padding: 10px 0;
+}
+
+
+/* Nosotros */
+.us__description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.us__description>p{
+    padding: 20px;
+}
+
+.us__image{
+    padding: 10px;
+    width: 350px;
+    height: 240px;
+}
+
+
+/* Ubicación */
+iframe{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 0px #000a;
+}
+
+
+/* Formulario de Contactos */
+.form{
+    background-color: #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 6px 0px #000a;
+    margin: 10px 0 30px 0;
+}
+
+label{
+    padding: 10px 0 4px 0 ;
+}
+
+input{
+    font-size: 1em;
+    padding: 7px;
+    font-family: inherit;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.contact__correo{
+    display: flex;
+}
+
+input[name='email_id']{
+    width: 70%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+}
+
+.domain{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 30%;
+    background-color: #333;
+    color: #fff;
+    border-left: none;
+}
+
+textarea{
+    width: 100%;
+    height: 140px;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 10px;
+    resize: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+input:focus,
+textarea:focus{
+    outline: 1px solid #555;
+}
+
+input[type='submit']{
+    margin: 20px 0 10px 0;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type='submit']:hover{
+    background-color: #444;
+}
+
+/* Footer */
+footer{
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.footer__info{
+    padding: 10px;
+}
+
+/* Media querys */
+@media (max-width: 699px) {
+    .us__description{
+        flex-direction: column;
+    }
+
+    .us__image{
+        padding: 10px 0;
+        width: 100%;
+        max-width: 300px;
+        min-width: 100px;
+    }
+
+    .us__description>p{
+        padding: 10px 0;
+    }
+
+    .menu__list {
+        background-color: #0009;
+        padding: 10px;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .menu__list>li{
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu__list.active {
+        display: flex;
+    }
+
+    .menu__hamburger {
+        display: block;
+    }
+
+    .header__menu{
+        justify-content: space-between;
+    }
+
+}
+
+@media (max-width: 415px) {
+    .header__title{
+        font-size: 1.5em;
+    }
+
+    .menu__list>li{
+        margin: 4px;
+    }
+
+    section{
+        padding: 30px 17px;
+    }
+}

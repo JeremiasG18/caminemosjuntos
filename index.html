@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caminemos Juntos</title>
+
+    <!-- Metadatos -->
+    <meta name="description" content="Caminemos Juntos es un emprendimiento de Punto de Apoyo S.R.L., creado en 2011 con el propósito de brindar cuidados paliativos y acompañamiento terapéutico a personas de todas las edades, tanto pacientes con patologías como personas sanas. Nos enfocamos especialmente en aquellas que residen en zonas urbanas con menos de 500.000 habitantes, donde el acceso a este tipo de servicios suele ser limitado.">
+    <meta name="keywords" content="Caminemos Juntos, cuidados paliativos, acompañamiento terapéutico, Punto de Apoyo S.R.L., Formosa, Argentina">
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="/assets/img/icon.ico" type="image/x-icon">
+
+    <!-- Font -->
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    
+    <!-- EmailJS -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+    emailjs.init('2g4fDvaP0Jxa6brqI')
+    </script>
+
+</head>
+<body>
+
+    <header class="header">
+        <nav class="header__menu">
+            <div class="menu__logo">
+                <img src="assets/img/logo.png" alt="Logo">
+            </div>
+            <ul class="menu__list" id="menu-list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#us">Nosotros</a></li>
+                <li><a href="#scheduling">Programación</a></li>
+                <li><a href="#location">Ubicación</a></li>
+                <li><a href="#contact">Contactos</a></li>
+            </ul>
+            <div class="menu__hamburger" id="hamburger">
+                <i class="menu__icon">
+                    <img src="assets/img/bars-solid.svg" alt="Ícono de menú" title="Menú">
+                </i>
+            </div>
+        </nav>
+        <div class="header__title">
+            <h1>Caminemos Juntos</h1>
+            <p>Servicio de Acompaniamiento y Terapeutico</p>
+        </div>
+    </header>
+    
+    <main class="main">
+        <section class="us" id="us">
+            <h2 class="us__title">Nosotros</h2>
+            <p>
+                Caminemos Juntos es un emprendimiento de Punto de Apoyo S.R.L., creado en 2011 con el propósito de brindar cuidados paliativos y acompañamiento terapéutico a personas de todas las edades, tanto pacientes con patologías como personas sanas. Nos enfocamos especialmente en aquellas que residen en zonas urbanas con menos de 500.000 habitantes, donde el acceso a este tipo de servicios suele ser limitado.
+            </p>
+            <div class="us__description">
+                <img class="us__image" src="/assets/img/img_nosotros.jpg" alt="Equipo de trabajo de Caminemos Juntos">
+                <p>
+                    Nuestro equipo está conformado por profesionales certificados en cuidados paliativos, auxiliares de enfermería, enfermeros y fisioterapeutas, quienes trabajan bajo supervisión constante para garantizar la calidad del servicio. Ofrecemos atención personalizada, ya sea en instituciones públicas, privadas o en el domicilio del paciente, con un enfoque en la mejora continua y el bienestar integral.
+                </p>
+            </div>
+            <p>
+                Además, contamos con un sistema de abono flexible (inmediato o prepago) y un equipo administrativo que coordina y optimiza cada tarea. Nos esforzamos por mantener una comunicación clara y cercana con nuestros pacientes y sus familias, documentando el progreso y asegurando su satisfacción.
+            </p>
+            <p>
+                En Caminemos Juntos, nuestra misión es acompañarte en cada paso, brindando un servicio humano, profesional y accesible.
+            </p>
+        </section>
+
+        <section class="location" id="location">
+            <h2>Ubicación</h2>
+            <p>Nuestra sucursal se encuentra en Saveedra 260, frente a "Musimundo", en un pasillo, a lado de "Kailas cueros", en la oficina 11.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.4867428310117!2d-58.17042162466268!3d-26.180840077090973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945ca5e798220115%3A0x7381fb7f867e6c2b!2sSaavedra%20260%2C%20P3600%20Formosa!5e0!3m2!1ses!2sar!4v1740098702640!5m2!1ses!2sar" width="620" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Formulario de Contacto</h2>
+            <form class="form" id="form">
+                <label for="datos">Nombre y Apellido:</label>
+                <input type="text" name="from_name" id="datos" placeholder="Ingrese su nombre y apellido">
+                <label for="correo">Correo:</label>
+                <div class="contact__correo">
+                    <input type="text" name="email_id" id="correo" placeholder="Ingrese su correo electronico">
+                    <input type="text" class="domain" value="@gmail.com" disabled>
+                </div>
+                <label for="consulta">Consulta:</label>
+                <textarea name="message"  id="consulta" placeholder="Ingrese su consulta"></textarea>
+                <input type="submit" value="Enviar Consulta" id="button">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__info">
+            <h4>Telefono</h4>
+            <p>3704-265525</p>
+        </div>
+        <div class="footer__info">
+            <h4>Ubicación</h4>
+            <p>Saveedra 260</p>
+        </div>
+        <div class="footer__info">
+            <h4>Facebook</h4>
+            <p>CaminemosJuntos</p>
+        </div>
+        <div class="footer__info">
+            <h4>Correo electronico</h4>
+            <p>caminemosjuntos@gmail.com</p>
+        </div>
+    </footer>
+    
+    <script src="/assets/js/script.js"></script>
+
+</body>
+</html>
