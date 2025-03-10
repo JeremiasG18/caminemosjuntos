@@ -305,8 +305,8 @@ footer{
 @media (max-width: 320px) {
 
     .menu__logo img{
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 70px;
     }
 
     h1{
