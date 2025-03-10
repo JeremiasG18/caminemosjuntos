@@ -122,7 +122,6 @@ p{
     height: 240px;
 }
 
-
 /* Ubicación */
 iframe{
     width: 100%;
@@ -277,6 +276,17 @@ footer{
 
 }
 
+@media (max-width: 490px){
+    
+    input[name='email_id']{
+        width: 60%;
+    }
+
+    .domain{
+        width: 40%;
+    }
+}
+
 @media (max-width: 415px) {
     .header__title{
         font-size: 1.5em;
@@ -289,6 +299,7 @@ footer{
     section{
         padding: 30px 17px;
     }
+
 }
 
 @media (max-width: 320px) {
